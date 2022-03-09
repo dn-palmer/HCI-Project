@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BitWise</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/BitWise.styles.css" asp-append-version="true" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-expand-lg  text-decoration-none d-flex">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="text-white nav-link" style="font-size: 1.5rem;" href="#">Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-white nav-link" style="font-size: 1.5rem;" href="#">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a class="navbar-brand text-white" style="font-size: 40px;" href="#">Bit-Wise</a>
+            </div>
+            <div class="collapse navbar-collapse flex-row justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item p-2">
+                        <a class="text-white nav-link me-auto" style="font-size: 1.5rem;" href="#">Login</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="text-white nav-link me-auto" style="font-size:1.5rem;" href="#">Register</a>
+                    </li>
+
+                </ul>
+
+                <div class="btn-group dropstart">
+                    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img style="overflow: hidden;" src="https://img.icons8.com/external-jumpicon-glyph-ayub-irawan/32/000000/external-hamburger-basic-ui-jumpicon-glyph-jumpicon-glyph-ayub-irawan.png" />
+                    </button>
+                    <div class="dropdown-menu bg-dark text-white" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item bg-dark text-white" href="#">Acheivements</a>
+                        <a class="dropdown-item bg-dark text-white" href="#">Assignments</a>
+                        <a class="dropdown-item bg-dark text-white" href="#">Contact Us</a>
+                        <a class="dropdown-item bg-dark text-white" href="#">Dashboard</a>
+                        <a class="dropdown-item bg-dark text-white" href="#">Progress Report</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <hr style="height: 25px; opacity: 1; background-color: #96CDF2; margin: 0;" />
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top page-footer font-small blue mt-auto">
+        <div style="font-size:1rem;" class="footer-copyright text-center py-3">
+            © 2022 Copyright:
+        </div>
+
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
