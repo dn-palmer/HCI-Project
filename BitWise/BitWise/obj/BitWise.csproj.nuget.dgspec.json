@@ -1,31 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\quite\\Documents\\GitHub\\HCI-Project\\BitWise\\BitWise\\BitWise.csproj": {}
+    "C:\\Users\\Johnathan\\Source\\Repos\\HCI-Project\\BitWise\\BitWise\\BitWise.csproj": {}
   },
   "projects": {
-    "C:\\Users\\quite\\Documents\\GitHub\\HCI-Project\\BitWise\\BitWise\\BitWise.csproj": {
+    "C:\\Users\\Johnathan\\Source\\Repos\\HCI-Project\\BitWise\\BitWise\\BitWise.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\quite\\Documents\\GitHub\\HCI-Project\\BitWise\\BitWise\\BitWise.csproj",
+        "projectUniqueName": "C:\\Users\\Johnathan\\Source\\Repos\\HCI-Project\\BitWise\\BitWise\\BitWise.csproj",
         "projectName": "BitWise",
-        "projectPath": "C:\\Users\\quite\\Documents\\GitHub\\HCI-Project\\BitWise\\BitWise\\BitWise.csproj",
-        "packagesPath": "C:\\Users\\quite\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\quite\\Documents\\GitHub\\HCI-Project\\BitWise\\BitWise\\obj\\",
+        "projectPath": "C:\\Users\\Johnathan\\Source\\Repos\\HCI-Project\\BitWise\\BitWise\\BitWise.csproj",
+        "packagesPath": "C:\\Users\\Johnathan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Johnathan\\Source\\Repos\\HCI-Project\\BitWise\\BitWise\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\quite\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Johnathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "c:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,6 +39,38 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
